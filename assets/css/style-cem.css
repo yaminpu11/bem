@@ -1,0 +1,61 @@
+#theme-cem {
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+/* Back to top button */
+
+#theme-cem .back-to-top {
+    position: fixed;
+    display: none;
+    background: #63a6f1;
+    color: #fff;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 50%;
+    right: 15px;
+    bottom: 15px;
+    transition: background 0.5s;
+    z-index: 11;
+}
+#theme-cem .back-to-top:hover{
+    background: #3a78bc;
+}
+#theme-cem .back-to-top i {
+    padding-top: 12px;
+    color: #fff;
+}
+
+
+
+/* Btn Registrasi */
+#theme-cem .btn-reg{
+    background: #63a6f1;
+    border: 1px solid #3a78bc;
+    color: #fff !important;
+    font-size: 1em;
+    padding: 15px !important;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+#theme-cem .btn-lang-active{
+    padding: 15px;
+    border: 2px solid #63a6f1;
+    border-radius: 10px;
+}
+
+#theme-cem .main-nav a:hover,
+#theme-cem .main-nav .active > a,
+#theme-cem .main-nav li:hover > a {
+    color: #ffffff;
+    text-decoration: none;
+    background: #63a6f1;
+}
+
