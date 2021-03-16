@@ -15,7 +15,7 @@ class MY_Controller extends CI_Controller {
 
         if($ServerName!='localhost'){
             $data = $this->db->select('ProdiID')
-                ->get_where('db_academic.program_study_detail',array('Host' => $ServerName))->result_array();
+                ->get_where('db_bem.host_detail',array('Host' => $ServerName))->result_array();
             $GlobalProdiID = (count($data)>0) ? $data[0]['ProdiID'] : $GlobalProdiID;
         }
 
@@ -38,7 +38,7 @@ class MY_Controller extends CI_Controller {
     public function template($content)
     {
 
-        $style = $this->db->get_where('db_prodi.style_prodi',array('ProdiID'=>GlobalProdiID))->result_array();
+        $style = $this->db->get_where('db_bem.style_prodi',array('ProdiID'=>GlobalProdiID))->result_array();
 
         $data['style'] = (count($style)>0) ? $style[0] : $style;
 

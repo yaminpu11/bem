@@ -18,7 +18,7 @@
 
     function getInstaProdi() {
       var data = {
-          ProdiID : 1;
+          ProdiID : 0;
       };
       var token = jwt_encode(data,'UAP)(*');
       var url = base_url_js_server_ws+'api-prodi/__getInstaProdi';

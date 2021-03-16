@@ -189,7 +189,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             window.url_image = "<?= url_image_lecturer; ?>";
             window.url_image_students = "<?= url_image_students; ?>";
 
-            window.GlobalProdiID = "<?= GlobalProdiID; ?>";
+            // window.GlobalProdiID = "<?= GlobalProdiID; ?>";
+            window.GlobalProdiID = 0;
+
 
             window.base_url_js = "<?= base_url(); ?>";
             window.base_url_blog = "<?= url_blog ?>";//routes url_blogs in index.php

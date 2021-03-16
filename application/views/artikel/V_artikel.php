@@ -34,7 +34,7 @@
         <div class="view  overlay py-5" style="background-image: url(assets/images/event.png);
           background-position: center;
           background-repeat: no-repeat;
-          background-size: cover;filter: grayscale(1);min-height: 450px;">
+          background-size: cover;filter: grayscale(1);">
           <!-- <img class="card-img-top" src="<?= base_url()?>/assets/images/event.png"
             alt="Card image cap"> -->
          
@@ -153,7 +153,7 @@
 
                           '<div class="col-lg-5 col-xl-4">'+
 
-                            '<div class="view overlay rounded z-depth-1-half mb-lg-0 mb-4">'+
+                            '<div class="overlay rounded z-depth-1-half mb-lg-0 mb-4">'+
                               '<img class="w-100 img-fitter" data-src="'+locimg+''+response[i].Images+'" height="335px" alt="'+response[i].Title+'">'+
                               '<a href='+base_url_blog+'article/'+response[i].ID_title+'/'+response[i].SEO_title+'" target="_blank">'+
                                 '<div class="mask rgba-white-slight"></div>'+
