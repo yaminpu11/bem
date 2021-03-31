@@ -44,7 +44,7 @@
             <div class="row">
                 <div class="col-lg-5 col-md-6">
                     <div class="about-img" id="viewKaprodiPhoto">
-                        <img src="<?php echo base_url()?>/assets/img/<?= $sambutan->Images ?>" alt="">
+                        <img src="<?php echo base_url()?>/assets/img/slider/bem.png" alt="">
 
                     </div>
                 </div>
@@ -349,7 +349,7 @@
         var token = jwt_encode(data,'UAP)(*');
         var url = base_url_js_server_ws+'api-prodi/__getSliderProdi';
         var locimgprodi = base_url_js_server_ws+'images/Slider/';
-        // var locimgbem = base_url_js+'assets/img/slider/';
+        var locimgbem = base_url_js+'assets/img/slider/';
 
         $.post(url,{token:token},function (jsonResult) {
             if(jsonResult.length>0){
@@ -388,7 +388,7 @@
             else
                 {
                 $('#viewSliderProdi').append('<div class="carousel-item item active">'+
-                    '<img class="d-block w-100"  src="'+locimgprodi+'bem.png" alt="">'+
+                    '<img class="d-block w-100"  src="'+locimgbem+'bem.png" alt="">'+
                     '</div>');
 
             }
